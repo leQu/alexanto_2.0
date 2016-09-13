@@ -1,0 +1,242 @@
+
+/* Imports */
+@import 'typography.styl'
+@import 'normalize.styl'
+
+body::-webkit-scrollbar {
+	display: none;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	background-color: mistyrose;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	h1 {
+		height: 40px;
+		
+	}
+}
+
+.jumpTarget {
+	flex-direction: row;
+	width: 460px;
+
+	button {		
+		margin: 0 40px 0 40px;
+		font-size: 12px;
+		height 100px;
+		width: 150px;
+	}
+	button:hover {
+		transition: height 1s, width 1s;
+	}
+}
+
+.annaContainer {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.annaContainer.in-transition {
+	transition: transform 600ms ease;
+}
+	
+.target-nav {
+	width: 100%;
+}
+#home-logo {
+	margin-right: 30px;
+	font-size: 40px;
+	text-align: right
+}
+	
+.annaTop { 
+	display: flex;
+	width: 750px;
+	align-self: center;
+	flex-direction: row;
+	margin: 100px 40px 30px 40px; 
+	color: #434445;
+
+	section:first-child {
+		padding-top: 40px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 55%;
+		
+		h1 {
+			width: 65%;
+			margin: 0;
+			font-family: 'Lato', sans-serif;
+			font-size: 35px;
+			text-align: center;
+		}
+		
+		ul {
+		display: flex;
+		font-family: 'Lato', sans-serif;
+		font-weight: bold;
+		text-align: center;
+		padding: 0;
+		margin: 0;
+			li {
+				padding: 1px 7px 2px 7px;
+				list-style-type: none;
+				transition: background-color 1s;
+			}
+			li:hover {
+				background-color: mistyrose;
+				cursor: pointer;
+			}
+		}
+		p {
+			font-family: 'Lato', sans-serif;
+			font-weight: bold;
+			margin: 12px;
+		}
+	}
+	section:last-child{
+		width: 45%;
+		height: 350px;
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+
+.annaMid {
+	align-self: center;
+	width: 800px;
+}
+
+.pillars {
+	width: 100%;
+	height: 400px;
+	margin: 0 auto;
+	color: #434445;
+	font-family: 'Varela Round';
+
+	section {
+		text-align: center;
+		display: block;
+		float: left;
+		width: 33.3%;
+		height: 300px;
+		margin: 0 auto;
+		padding-top: 30px;
+		margin-top: 10px;
+		background-color: white;
+
+		img {
+			width: 100px;
+			height: 100px;
+			border-radius: 150px;
+			-webkit-border-radius: 150px;
+			-moz-border-radius: 150px;
+		}
+
+		h1 {
+			font-size: 23px;
+			font-family: 'Lato', sans-serif;
+			margin: 10px 0 5px 0;
+
+		}
+
+		hr { 
+			width: 70%;
+			display: block;
+			margin-top: 10px;
+			margin-bottom: 0px;
+			margin-left: auto;
+			margin-right: auto;
+			border-style: inset;
+			border-width: 1px;
+		}
+
+		p {
+			text-align: center;
+			margin: 10px;
+			padding: 0 10px 0 10px;
+			font-family: 'Lato', sans-serif;
+			font-weight: bold;
+			font-size: 13px;
+		}
+	}
+
+	section:first-child {
+		//background-color: #eeeeee;
+	}
+
+	section:last-child {
+		//background-color: #f7f7f7;
+	}
+}
+
+.annaBot { 
+	background-color: lightgrey;
+	-moz-box-shadow: inset 0 0 20px grey;
+  	-webkit-box-shadow: inset 0 0 20px grey;
+  	box-shadow: inset 0 5px 20px grey; 
+	height: 200px;
+}
+
+.contact {
+	font-family: 'Varela Round';
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	hr {
+		width: 95%;
+		margin: 0;
+		border-style: inset;
+		border-width: 1px;
+		align-self: center;
+	}
+	h3{
+		font-family: 'Fjalla One';
+		font-size: 18px;
+		padding: 0;
+		margin 0 0 5px 0;
+		color: #888888; 
+		font-weight: normal;
+		align-self: center;
+	}
+}
+.contactInfo{
+	display: flex;
+	flex-direction: row;
+	margin-left: 20px;
+	h1{
+		margin: 10px 0 5px 0;
+		font-weight: bold;
+		font-family: 'Fjalla One';
+		font-size: 25px;
+		padding: 20px 0 0 5px;
+		color: #888888;
+	}
+	h1:last-child{
+		font-weight: normal;
+	}
+}
+
+.contactContent {
+	display: flex;
+	flex-direction: column;
+	height: 50%;
+	padding: 10px;
+	h2 {
+		margin-left: 10px;
+		font-family: 'Fjalla One';
+		font-size: 18px;
+		color: #888888; 
+		font-weight: normal;
+		margin: 0 0 0 30px;
+		padding: 0;
+	}
+}

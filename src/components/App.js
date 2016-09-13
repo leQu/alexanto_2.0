@@ -1,17 +1,25 @@
 import React, { Component } from 'react';
+import { browserHistory } from 'react-router';
 
 export default class App extends Component {
 
-	goToAnna(who){
-		console.log('Hoppa till who')
-		//this.history.pushState(null, '/'+who);
+	jumpToTarget(who){
+		console.log('Hoppa till '+who)
+		browserHistory.push('/'+who);
 	}
 
   render() {
     return (
-    	<div>
-      	<h1>Hello, wurld</h1>
-      	<button onClick={this.goToAnna.bind(this, 'anna')}>ANNA</button>
+    	<div className="container">
+        <section className="jumpTarget">
+          <button onClick={this.jumpToTarget.bind(this, 'anna')}>Anna Wilson Lantz</button>
+          <button onClick={this.jumpToTarget.bind(this, 'peter')}>Peter Lantz</button>
+        </section>
+        <h1>alexanto</h1>
+        <section className="jumpTarget">
+          <button onClick={this.jumpToTarget.bind(this, 'alexander')}>Alexander Lantz</button>
+          <button onClick={this.jumpToTarget.bind(this, 'antonia')}>Antonia Lantz</button>
+        </section>
       </div>
     );
   }
